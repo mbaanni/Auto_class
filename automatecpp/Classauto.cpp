@@ -61,12 +61,12 @@ int main(int ac, char **av)
 {
 	if (ac != 2)
 	{
-		std::cout << "enter name"<<std::cout;
+		std::cout << "enter name"<<std::endl;
 		return 1;
 	}
 	std::string class_name = av[1];
-	std::fstream fcpp("/Users/mbaanni/Custem_cmd/automatecpp/ClapTrap.cpp", std::ios::in);
-	std::fstream fhpp("/Users/mbaanni/Custem_cmd/automatecpp/ClapTrap.hpp", std::ios::in);
+	std::fstream fcpp("~/Desktop/Auto_class/automatecpp/ClapTrap.cpp", std::ios::in);
+	std::fstream fhpp("~/Desktop/Auto_class/automatecpp/ClapTrap.hpp", std::ios::in);
 	if (!fcpp)
 		return 15;
 	if (!fhpp)

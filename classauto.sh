@@ -1,11 +1,13 @@
 #!/bin/bash
 
-if [ -n "$1" ] && [ -n "$2" ]; then
-	cd /Users/mbaanni/Custem_cmd/automatecpp
+my=$(pwd);
+
+if [ -n "$1" ] && [ -n $path ]; then
+	cd ~/Desktop/Auto_class/automatecpp
 	./a.out $1
 	x=$(echo $?)
 	if [ "$x" -eq 0 ]; then
-		mv /Users/mbaanni/Custem_cmd/automatecpp/$1.* $2;fi
+		mv ~/Desktop/Auto_class/automatecpp/$1.* $my;fi
 else
 	echo " something went wrong"
 fi
